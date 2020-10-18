@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hdfs" />
-        <module name="hive" />
+        <module name="mapreduce" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
