@@ -20,7 +20,7 @@ public class HDFSClient {
     public void before() throws InterruptedException, IOException{
         // 获取一个HDFS的抽象封装对象
         Configuration configuration = new Configuration();
-        fs = FileSystem.get(URI.create("hdfs://nn1.hadoop:9000"), configuration, "hadoop");
+        fs = FileSystem.get(URI.create("hdfs://nn2.hadoop:9000"), configuration, "hadoop");
         System.out.println(" before !!!");
     }
 

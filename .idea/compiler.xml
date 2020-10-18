@@ -13,8 +13,8 @@
     <bytecodeTargetLevel>
       <module name="canal" target="1.5" />
       <module name="hdfs" target="1.5" />
-      <module name="hive" target="1.5" />
-      <module name="mapreduce" target="1.5" />
+      <module name="hive" target="1.8" />
+      <module name="mapreduce" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
