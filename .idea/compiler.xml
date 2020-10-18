@@ -6,13 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="hbase" />
         <module name="hdfs" />
-        <module name="hive" />
         <module name="mapreduce" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="canal" target="1.5" />
+      <module name="hbase" target="8" />
       <module name="hdfs" target="1.5" />
       <module name="hive" target="8" />
       <module name="mapreduce" target="1.8" />
