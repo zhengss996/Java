@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/canal/pom.xml" />
         <option value="$PROJECT_DIR$/hive/pom.xml" />
+        <option value="$PROJECT_DIR$/java_se/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

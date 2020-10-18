@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="hbase" />
         <module name="hdfs" />
+        <module name="java_se" />
         <module name="mapreduce" />
       </profile>
     </annotationProcessing>
@@ -16,6 +17,7 @@
       <module name="hbase" target="8" />
       <module name="hdfs" target="1.5" />
       <module name="hive" target="8" />
+      <module name="java_se" target="8" />
       <module name="mapreduce" target="1.8" />
     </bytecodeTargetLevel>
   </component>

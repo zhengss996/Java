@@ -1,0 +1,43 @@
+<configuration>
+	<!-- 数据库 start -->
+	<property>
+	  <name>javax.jdo.option.ConnectionURL</name>
+	  <value>jdbc:mysql://localhost:3306/hive_meta</value>
+	  <description>mysql连接</description>
+	</property>
+
+	<property>
+	  <name>javax.jdo.option.ConnectionDriverName</name>
+	  <value>com.mysql.jdbc.Driver</value>
+	  <description>mysql驱动</description>
+	</property>
+
+	<property>
+	  <name>javax.jdo.option.ConnectionUserName</name>
+	  <value>hive</value>
+	  <description>数据库使用用户名</description>
+	</property>
+
+	<property>
+	  <name>javax.jdo.option.ConnectionPassword</name>
+	  <value>12345678</value>
+	  <description>数据库密码</description>
+	</property>
+	<!-- 数据库 end -->
+	<!-- windows 本地磁盘目录  -->
+	<property> 
+	  <name>hive_test.metastore.warehouse.dir</name>
+	  <value>/tmp/warehouse</value>
+	  <description>hive使用的HDFS目录</description>
+	</property>
+    <!--不校验hive的版本和metastore版本是否匹配-->
+    <property>
+	  <name>hive_test.metastore.schema.verification</name>
+	  <value>false</value>
+	</property>
+	<property> 
+	  <name>hive_test.cli.print.current.db</name>
+	  <value>true</value>
+	</property>
+	<!-- 其它 end -->
+</configuration>
