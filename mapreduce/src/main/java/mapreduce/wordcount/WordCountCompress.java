@@ -123,7 +123,7 @@ public class WordCountCompress  extends Configured implements Tool{
 	}
 	
 	public static void main(String[] args) throws Exception {
-		// 运行参数： D:/workspace/tmp/input/wordcount D:/workspace/tmp/output
+		// 运行参数： D:/tmp/input/wordcount D:/workspace/tmp/output
 		// -D参数       -Dmapreduce.output.fileoutputformat.compress=true -Dmapreduce.output.fileoutputformat.compress.codec=org.apache.hadoop.io.compress.SnappyCodec D:/tmp/input/wordcount C:/Users/song/Desktop/output/wordcount
 		ToolRunner.run(new WordCountCompress(), args);
 	}

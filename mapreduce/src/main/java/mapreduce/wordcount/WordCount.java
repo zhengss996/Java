@@ -88,11 +88,11 @@ public class WordCount extends Configured implements Tool {
         Job job = Job.getInstance(conf, "wordcount");
 
         // 设置 job 运行类
-        job.setJarByClass(mapreduce.wordcount.WordCount.class);
+        job.setJarByClass(WordCount.class);
 
         // 设置 map reduce 的运行类
-        job.setMapperClass(mapreduce.wordcount.WordCount.WordCountMapper.class);
-        job.setReducerClass(mapreduce.wordcount.WordCount.WordCountReduce.class);
+        job.setMapperClass(WordCountMapper.class);
+        job.setReducerClass(WordCountReduce.class);
 
         // 设置【reduce】运行的个数, 默认一个可以不写
         job.setNumReduceTasks(2);
@@ -131,6 +131,6 @@ public class WordCount extends Configured implements Tool {
     public static void main(String[] args) throws Exception {
         // 运行参数： D:/tmp/input/wordcount C:/Users/song/Desktop/output/wordcount
         // 集群运行:  packkage打包, hadoop jar hadoop-1.0-SNAPSHOT.jar com.songsong.mapreduce.wordcount.WordCount /user/hadoop/mapreduce/input/wordcount/word.txt /user/hadoop/mapreduce/output
-        ToolRunner.run(new mapreduce.wordcount.WordCount(), args);
+        ToolRunner.run(new WordCount(), args);
     }
 }
