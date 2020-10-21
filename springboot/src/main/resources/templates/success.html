@@ -15,7 +15,7 @@
 <h4 th:text="${user}" th:each="user:${users}"></h4>
 <hr/>
 <h4>
-    <span th:each="${users}">[[${user}]]</span>
+    <span th:each="user: ${users}">[[${user}]]</span>
 </h4>
 </body>
 </html>
