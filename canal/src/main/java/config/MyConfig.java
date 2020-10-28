@@ -8,3 +8,4 @@ public class MyConfig {
     // kafka 连接
     public static final String KAFKA_CANAL_TOPIC="CANAL_TEST";
 }
+
